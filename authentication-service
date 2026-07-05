@@ -85,4 +85,4 @@ cookie:
     domain: localhost
     secure: false
     samesite: Lax
-    weburl: https://localhost:8060  #api gatewat
+    weburl: https://localhost:8060  #api gateway
