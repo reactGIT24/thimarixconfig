@@ -28,3 +28,10 @@ cors:
     #origins: https://xxxxxxx     #production
     methods: POST,PUT,GET,OPTIONS,DELETE,PATCH
     headers: Authorization,Content-Type,Accept
+
+
+
+    # Or disable security completely
+security:
+  basic:
+    enabled: false
