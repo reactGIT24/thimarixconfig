@@ -2,7 +2,7 @@
 # Server
 #--------------------------------------------------------  
 server:
-    port: 8060 
+    port: 8080 
     servlet: 
         session: 
             persistent: false
