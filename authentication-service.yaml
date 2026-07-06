@@ -45,15 +45,6 @@ spring:
         init: 
             platform: mysql
 #--------------------------------------------------------
-# CORS Configuration
-#--------------------------------------------------------
-cors:
-    origins: http://localhost:5173   #local
-    #origins: https://xxxxxxx     #production
-    methods: POST,PUT,GET,OPTIONS,DELETE,PATCH
-    headers: Authorization,Content-Type,Accept
-
-#--------------------------------------------------------
 # Cookies
 #--------------------------------------------------------
 #one day = 86400 seconds
