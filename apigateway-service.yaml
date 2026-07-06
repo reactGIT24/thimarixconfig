@@ -1,1 +1,13 @@
-
+#--------------------------------------------------------
+# Server
+#--------------------------------------------------------  
+server:
+    port: 8060 
+    servlet: 
+        session: 
+            persistent: false
+    http2:
+        enabled: true
+    compression:
+        enabled: true
+        mime-types: application/json
