@@ -8,23 +8,17 @@ security:
 #--------------------------------------------------------
 #  Tracing  across Thimarix microservices  - Zipkin
 #--------------------------------------------------------
-management:
-   endpoints:
-      web:
-         exposure:
-            include: health,info,metrics,prometheus
-   tracing:
-      enable: true
-      sampling:
-         probability: 1.0
-   otlp:
-      tracing:
-         endpoint: http://localhost:4318/v1/traces 
-   endpoints:
-      web:
-         exposure:
-            include: "*"
+tracing:
+  url: http://localhost:4318/v1/traces
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+logging:
+  pattern:
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
 #--------------------------------------------------------
 # Eureka Client
 #--------------------------------------------------------  
