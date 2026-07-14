@@ -50,7 +50,7 @@ app:
         authentication: lb://AUTHENTICATION-SERVICE
 
 #--------------------------------------------------------
-# Gateway Security properties
+# Gateway custom security configuration properties
 #--------------------------------------------------------
 gateway:
     security:
