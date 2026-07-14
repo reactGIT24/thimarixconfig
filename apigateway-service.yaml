@@ -43,3 +43,9 @@ spring:
                                   - OPTIONS                                  
                                   - PATCH
 
+# Custom security configuration properties
+gateway:
+  security:
+    # Shared secret key used for verifying JWT tokens. Must match the gateway's secret.
+    # Value: "this-secret-is-large-enough-to-be-safe-and-256-bit-secure!" base64 encoded
+    shared-secret: "dGhpcy1zZWNyZXQtaXMtbGFyZ2UtZW5vdWdoLXRvLWJlLXNhZmUtYW5kLTI1Ni1iaXQtc2VjdXJlIQ=="
