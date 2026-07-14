@@ -63,3 +63,6 @@ gateway:
         shared-secret: "dGhpcy1zZWNyZXQtaXMtbGFyZ2UtZW5vdWdoLXRvLWJlLXNhZmUtYW5kLTI1Ni1iaXQtc2VjdXJlIQ=="
         # Token expiration in milliseconds (e.g. 5000ms = 5s to prevent replay attacks)
         token-expiration-ms: 5000
+        allowed-paths:
+            - /actuator/health
+            - /actuator/info
