@@ -54,8 +54,7 @@ app:
 #--------------------------------------------------------
 gateway:
     security:
-        token:
-            subject: api-gateway 
+        token-subject: api-gateway 
         
         # Whitelisted IPs allowed to access the API Gateway (comma-separated)
         # Includes localhost, IPv6 loopback, and Docker bridge network CIDR (172.16.0.0/12)
