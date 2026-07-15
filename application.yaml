@@ -53,7 +53,7 @@ app:
 #--------------------------------------------------------
 app:    
     servicename: #-------Sevice name ---------
-        authentication: Service-Authentication
+        authentication: authentication-service
     
     jwt: #------------ JWT Settings -----------
         token: Token
@@ -72,7 +72,7 @@ app:
         ar: درهم
         en: AED
 
-    serviceurl: #--------- Services Urls --------------------
+    serviceuri: #--------- Services URI --------------------
         authentication: http://Authentication-Service
 
     loadbalance: # --------- Load Balancing -----------------
