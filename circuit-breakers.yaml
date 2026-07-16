@@ -1,1 +1,6 @@
-
+circuit-breakers:
+   authentication-service:
+     failureRateThreshold: 50
+     slidingWindowSize: 20
+     minimumNumberOfCalls: 10
+     waitDurationInOpenState: 30
