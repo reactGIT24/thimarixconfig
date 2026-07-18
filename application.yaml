@@ -59,6 +59,7 @@ app:
         operation: http://Operation-Service
         inventory: http://Inventory-Service
         redis: http://Redis-Service
+        email: http://Email-Service
     
     jwt: #------------ JWT Settings -----------
         token: Token
@@ -84,6 +85,7 @@ app:
         operation: http://Operation-Service
         inventory: http://Inventory-Service
         redis: http://Redis-Service
+        email: http://Email-Service
 
     loadbalance: # --------- Load Balancing -----------------
         authentication: lb://AUTHENTICATION-SERVICE
@@ -92,6 +94,7 @@ app:
         operation: lb://OPERATION-SERVICE
         inventory: lb://INVENTORY-SERVICE
         redis: lb://REDIS-SERVICE
+        email: lb://EMAIL-SERVICE
     
     logs: # ---- writting logs ---------------
         apigateway: true
