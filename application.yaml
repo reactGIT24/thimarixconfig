@@ -110,6 +110,10 @@ app:
     logs: # ---- writting logs ---------------
         apigateway: true
         authentication: true
+        redis: true
+        customer: true
+        operation: true
+        inventory: true
         
     webclient: # ----- Web Client Config  --------------------
         max-connections: 10000
