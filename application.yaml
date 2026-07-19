@@ -86,13 +86,16 @@ app:
     cookies: #------------ Cookies Settings -----------
         httponly: false
         path: /
-        expires: 1
         max-age: 86400
-        domain: localhost # localhost
-        #domain: localhost  -->production
-        secure: false
         samesite: Lax
+        #---- uat -------
+        secure: false
+        domain: localhost # localhost
         weburl: https://localhost:8080
+        # ---- production
+        #domain: my domain
+        #secure: true
+        #weburl: https://my domain
 
     language: #----- Supported Languages --------
         en: en
