@@ -111,9 +111,11 @@ app:
         apigateway: true
         authentication: true
         redis: true
-        customer: true
+        buyer: true
+        supplier: true
         operation: true
         inventory: true
+        communication: true
         
     webclient: # ----- Web Client Config  --------------------
         max-connections: 10000
