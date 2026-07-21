@@ -51,8 +51,7 @@ app:
    
    loadbalance:  #---------------- Loadbalance -------------------
        authentication: lb://AUTHENTICATION-SERVICE
-       supplier: lb://SUPPLIER-SERVICE
-       buyer: lb://BUYER-SERVICE
+       customer: lb://CUSTOMER-SERVICE
        operation: lb://OPERATION-SERVICE
        inventory: lb://INVENTORY-SERVICE
        redis: lb://REDIS-SERVICE
@@ -60,8 +59,7 @@ app:
 
    servicename:  #------------------ Sevice name -----------------
        authentication: authentication-service
-       supplier: supplier-service
-       buyer: buyer-service
+       customer: customer-service
        operation: operation-service
        inventory: inventory-Service
        redis: redis-service
@@ -69,8 +67,7 @@ app:
 
    serviceuri: #--------- Services URI --------------------
        authentication: http://authentication-service
-       supplier: http://supplier-service
-       buyer: http://buyer-service
+       customer: http://supplier-service
        operation: http://operation-service
        inventory: http://inventory-service
        redis: http://redis-service
@@ -111,8 +108,7 @@ app:
        apigateway: true
        authentication: true
        redis: true
-       buyer: true
-       supplier: true
+       customer: true
        operation: true
        inventory: true
        communication: true
