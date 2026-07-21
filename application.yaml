@@ -140,7 +140,6 @@ gateway:
       # Includes localhost, IPv6 loopback, and Docker bridge network CIDR (172.16.0.0/12)
       whitelist-ips: 
          - 127.0.0.1:8080
-         - localhost:8080
          #- 192.168.1.10
         
          # Shared secret key used for signing JWT tokens.
