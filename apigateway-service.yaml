@@ -50,7 +50,7 @@ management:
     endpoints:
         web:
             exposure: 
-                include: gateway,health,metrics,circuitbreakers,circuitbreakerevents
+                include: "*"
         
         gateway:
            enabled: true
