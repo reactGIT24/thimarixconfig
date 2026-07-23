@@ -2,6 +2,8 @@ logging:
   level:
     io.micrometer.tracing: DEBUG
     io.opentelemetry.exporter.otlp: DEBUG
+    org.springframework.boot.actuate: DEBUG
+    org.springframework.cloud.gateway: DEBUG
 #--------------------------------------------------------
 # Server
 #--------------------------------------------------------
