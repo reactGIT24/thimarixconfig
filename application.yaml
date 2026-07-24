@@ -33,19 +33,17 @@ eureka:
            defaultZone: ${eureka_url:http://localhost:8761/eureka}           
    instance: 
        hostname: localhost
-#--------------------------------------------------------
-# CORS Configuration
-#--------------------------------------------------------
-cors:
-   origins: http://localhost:5173   #local
-   #origins: https://xxxxxxx     #production
-   methods: POST,PUT,GET,OPTIONS,DELETE,PATCH
-   headers: Authorization,Content-Type,Accept
 
 #--------------------------------------------------------
 # Custom properties
 #--------------------------------------------------------
 app:
+   cors: #---------------- CORS ----------------------
+      origins: http://localhost:5173   #local
+      #origins: https://xxxxxxx     #production
+      methods: POST,PUT,GET,OPTIONS,DELETE,PATCH
+      headers: Authorization,Content-Type,Accept
+   
    validation: #---------------- validation ----------------------
       fullname-maxlength: 60
    
