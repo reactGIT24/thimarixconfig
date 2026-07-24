@@ -49,15 +49,3 @@ spring:
       init: 
          platform: mysql
 #--------------------------------------------------------
-# Cookies
-#--------------------------------------------------------
-#one day = 86400 seconds
-cookie:
-    httponly: false
-    path: /
-    expires: 1
-    max-age: 86400
-    domain: localhost
-    secure: false
-    samesite: Lax
-    weburl: https://localhost:8060  #api gateway
